@@ -1,5 +1,6 @@
 ﻿using BarbershopManager.Domain;
 using BarbershopManager.Domain.IncomeRepository;
+using BarbershopManager.Exception.ExceptionBase;
 
 namespace BarbershopManager.Application.UseCases.Faturamento.Delete;
 public class DeleteIncomeUseCase : IDeleteIncomeUseCase
@@ -18,7 +19,7 @@ public class DeleteIncomeUseCase : IDeleteIncomeUseCase
 
         if (result == false)
         {
-            throw new Exception("Income not found");
+            throw new NotFoundException(ResourceErrorMessages.NAO_ENCONTRADO);
         }
 
         await _unitOfWork.Commit();

@@ -4,6 +4,7 @@ using BarbershopManager.Communication.Responses;
 using BarbershopManager.Domain;
 using BarbershopManager.Domain.Entities;
 using BarbershopManager.Domain.IncomeRepository;
+using BarbershopManager.Exception.ExceptionBase;
 
 namespace BarbershopManager.Application.UseCases.Faturamento.Register;
 public class RequestRegisterIncomeUseCase : IRequestRegisterIncomeUseCase
@@ -40,7 +41,9 @@ public class RequestRegisterIncomeUseCase : IRequestRegisterIncomeUseCase
 
 		if (result.IsValid == false)
 		{
-			throw new Exception("Dados inválidos!");
+			var errorMessages = result.Errors.Select(f => f.ErrorMessage).ToList();
+					
+			throw new ErrorOnValidationException(errorMessages);
 		}
 	}
 }

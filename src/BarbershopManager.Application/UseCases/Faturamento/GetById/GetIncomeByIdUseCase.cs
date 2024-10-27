@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using BarbershopManager.Communication.Responses;
 using BarbershopManager.Domain.IncomeRepository;
+using BarbershopManager.Exception.ExceptionBase;
 
 namespace BarbershopManager.Application.UseCases.Faturamento.GetById;
 public class GetIncomeByIdUseCase : IGetIncomeByIdUseCase
@@ -18,7 +19,7 @@ public class GetIncomeByIdUseCase : IGetIncomeByIdUseCase
 
         if (income is null)
         {
-            throw new Exception("Income not found!");
+            throw new NotFoundException(ResourceErrorMessages.NAO_ENCONTRADO);
         }
 
         return _mapper.Map<ResponseIncomeJson>(income);

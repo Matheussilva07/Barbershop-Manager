@@ -15,7 +15,12 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="ClosedXML" Version="0.104.1" />
     <PackageReference Include="FluentValidation" Version="11.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="UseCases\Faturamento\Reports\PDF\" />
   </ItemGroup>
 
 </Project>

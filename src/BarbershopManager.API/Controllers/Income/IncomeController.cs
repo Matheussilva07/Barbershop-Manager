@@ -81,7 +81,7 @@ public class IncomeController : ControllerBase
 	{
 		var total = await useCase.Execute();
 
-		return Ok(total);
+		return Ok($"{total} despesas");
 	}
 	[HttpGet("total-incomes-inMonth")]
 	[ProducesResponseType(StatusCodes.Status200OK)]
@@ -90,6 +90,6 @@ public class IncomeController : ControllerBase
 	{
 		var total = await useCase.Execute(month);
 
-		return Ok(total);
+		return Ok($"{total} despesas");
 	}
 }

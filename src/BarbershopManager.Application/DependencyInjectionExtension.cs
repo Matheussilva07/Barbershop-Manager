@@ -4,13 +4,14 @@ using BarbershopManager.Application.UseCases.Faturamento.Delete;
 using BarbershopManager.Application.UseCases.Faturamento.GetAll;
 using BarbershopManager.Application.UseCases.Faturamento.GetById;
 using BarbershopManager.Application.UseCases.Faturamento.Register;
+using BarbershopManager.Application.UseCases.Faturamento.Reports.Excel;
 using BarbershopManager.Application.UseCases.Faturamento.Update;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace BarbershopManager.Application;
 public static class DependencyInjectionExtension
 {
-	public static void MyDependencyInjection(this IServiceCollection services)
+	public static void AddUseCasesDependencyInjection(this IServiceCollection services)
 	{
 		AddUseCase(services);
 	}
@@ -25,5 +26,7 @@ public static class DependencyInjectionExtension
 
 		services.AddScoped<ICountAllIncomesUseCase, CountAllIncomesUseCase>();
 		services.AddScoped<ICountByMonthUseCase, CountByMonthUseCase>();
+
+		services.AddScoped<IGenerateExcelReportUseCase, GenerateExcelReportUseCase>();
 	}
 }

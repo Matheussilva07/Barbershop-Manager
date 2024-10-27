@@ -2,6 +2,7 @@
 using BarbershopManager.Communication.Requests;
 using BarbershopManager.Domain;
 using BarbershopManager.Domain.IncomeRepository;
+using BarbershopManager.Exception.ExceptionBase;
 
 namespace BarbershopManager.Application.UseCases.Faturamento.Update;
 public class UpdateIncomeUseCase : IUpdateIncomeUseCase
@@ -21,10 +22,10 @@ public class UpdateIncomeUseCase : IUpdateIncomeUseCase
 
         if (income is null)
         {
-            throw new Exception("Income not found!");
+            throw new NotFoundException(ResourceErrorMessages.NAO_ENCONTRADO);
         }
 
-         _mapper.Map(request, income);
+        _mapper.Map(request, income);
 
         _repository.Update(income);
 

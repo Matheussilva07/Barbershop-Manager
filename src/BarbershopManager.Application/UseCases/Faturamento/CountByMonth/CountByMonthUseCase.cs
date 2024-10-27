@@ -1,5 +1,6 @@
 ﻿
 using BarbershopManager.Domain.IncomeRepository;
+using BarbershopManager.Exception.ExceptionBase;
 
 namespace BarbershopManager.Application.UseCases.Faturamento.CountByMonth;
 public class CountByMonthUseCase : ICountByMonthUseCase
@@ -15,7 +16,7 @@ public class CountByMonthUseCase : ICountByMonthUseCase
 
         if (total == 0)
         {
-            throw new Exception("Não há faturamento neste mês!");
+            throw new NotFoundException(ResourceErrorMessages.NAO_ENCONTRADO);
         }
 
         return total;

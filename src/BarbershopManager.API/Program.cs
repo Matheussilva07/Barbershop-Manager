@@ -1,13 +1,7 @@
+using BarbershopManager.API.Filter;
 using BarbershopManager.Application;
 using BarbershopManager.Application.AutoMapper;
-using BarbershopManager.Application.UseCases.Faturamento.GetAll;
-using BarbershopManager.Application.UseCases.Faturamento.GetById;
-using BarbershopManager.Application.UseCases.Faturamento.Register;
-using BarbershopManager.Domain;
-using BarbershopManager.Domain.IncomeRepository;
 using BarbershopManager.Infrastructure;
-using BarbershopManager.Infrastructure.DataAccess;
-using BarbershopManager.Infrastructure.IncomeRepository;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -19,12 +13,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<BarbershopDbContext>();
-builder.Services.AddScoped<IIncomesRepository,IncomesRepository>();
-builder.Services.AddScoped<IUpdateRepository, IncomesRepository>();
-builder.Services.AddScoped<IUnitOfWork,UnitOfWork>();
+//Define o filtro de exceção:
+builder.Services.AddMvc(option => option.Filters.Add(typeof(ExceptionFilter)));
 
-builder.Services.MyDependencyInjection();
+builder.Services.AddUseCasesDependencyInjection();
+builder.Services.AddInfrastructureDependencyInjection();
 
 builder.Services.AddAutoMapper(typeof(AutoMapping));
 
