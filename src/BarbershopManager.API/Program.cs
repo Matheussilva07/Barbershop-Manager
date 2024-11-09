@@ -17,7 +17,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddMvc(option => option.Filters.Add(typeof(ExceptionFilter)));
 
 builder.Services.AddUseCasesDependencyInjection();
-builder.Services.AddInfrastructureDependencyInjection();
+builder.Services.AddInfrastructureDependencyInjection(builder.Configuration);
 
 builder.Services.AddAutoMapper(typeof(AutoMapping));
 

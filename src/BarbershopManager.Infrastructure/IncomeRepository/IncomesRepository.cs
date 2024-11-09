@@ -4,7 +4,7 @@ using BarbershopManager.Infrastructure.DataAccess;
 using Microsoft.EntityFrameworkCore;
 
 namespace BarbershopManager.Infrastructure.IncomeRepository;
-public class IncomesRepository : IIncomesRepository, IUpdateRepository
+internal class IncomesRepository : IIncomesRepository, IUpdateRepository
 {
 	private readonly BarbershopDbContext _dbcontext;
 	public IncomesRepository(BarbershopDbContext dbContext)

@@ -2,7 +2,7 @@
 using BarbershopManager.Infrastructure.DataAccess;
 
 namespace BarbershopManager.Infrastructure;
-public class UnitOfWork : IUnitOfWork
+internal class UnitOfWork : IUnitOfWork
 {
     private readonly BarbershopDbContext _context;
 	public UnitOfWork(BarbershopDbContext dbContext)
