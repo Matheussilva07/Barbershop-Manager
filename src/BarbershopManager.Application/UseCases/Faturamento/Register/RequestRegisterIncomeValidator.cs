@@ -1,4 +1,4 @@
-﻿using BarbershopManager.Communication.Requests;
+﻿using BarbershopManager.Communication.Requests.Incomes;
 using BarbershopManager.Exception.ExceptionBase;
 using FluentValidation;
 

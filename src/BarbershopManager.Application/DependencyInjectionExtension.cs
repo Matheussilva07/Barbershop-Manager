@@ -6,6 +6,9 @@ using BarbershopManager.Application.UseCases.Faturamento.GetById;
 using BarbershopManager.Application.UseCases.Faturamento.Register;
 using BarbershopManager.Application.UseCases.Faturamento.Reports.Excel;
 using BarbershopManager.Application.UseCases.Faturamento.Update;
+using BarbershopManager.Application.UseCases.Users.GetProfile;
+using BarbershopManager.Application.UseCases.Users.Login;
+using BarbershopManager.Application.UseCases.Users.Register;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace BarbershopManager.Application;
@@ -28,5 +31,11 @@ public static class DependencyInjectionExtension
 		services.AddScoped<ICountByMonthUseCase, CountByMonthUseCase>();
 
 		services.AddScoped<IGenerateExcelReportUseCase, GenerateExcelReportUseCase>();
+
+		services.AddScoped<IRegisterUserUseCase, RegisterUserUseCase>();
+		services.AddScoped<IDoLoginUseCase, DoLoginUseCase>();
+		services.AddScoped<IGetProfileUserUseCase, GetProfileUserUseCase>();
+
+
 	}
 }

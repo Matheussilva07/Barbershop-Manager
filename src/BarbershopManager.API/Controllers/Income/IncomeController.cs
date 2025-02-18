@@ -5,14 +5,17 @@ using BarbershopManager.Application.UseCases.Faturamento.GetAll;
 using BarbershopManager.Application.UseCases.Faturamento.GetById;
 using BarbershopManager.Application.UseCases.Faturamento.Register;
 using BarbershopManager.Application.UseCases.Faturamento.Update;
-using BarbershopManager.Communication.Requests;
+using BarbershopManager.Communication.Requests.Incomes;
 using BarbershopManager.Communication.Responses;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BarbershopManager.API.Controllers.faturamento;
-[Route("api/[controller]")]
+
+[Route("TestandoRotas/[controller]")]
 [ApiController]
+[Authorize]
 public class IncomeController : ControllerBase
 {
 	[HttpPost]

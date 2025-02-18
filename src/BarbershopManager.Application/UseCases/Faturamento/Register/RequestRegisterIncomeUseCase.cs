@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using BarbershopManager.Communication.Requests;
+using BarbershopManager.Communication.Requests.Incomes;
 using BarbershopManager.Communication.Responses;
 using BarbershopManager.Domain;
 using BarbershopManager.Domain.Entities;

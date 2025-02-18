@@ -1,4 +1,4 @@
-﻿using BarbershopManager.Communication.Requests;
+﻿using BarbershopManager.Communication.Requests.Incomes;
 using BarbershopManager.Communication.Responses;
 
 namespace BarbershopManager.Application.UseCases.Faturamento.Register;

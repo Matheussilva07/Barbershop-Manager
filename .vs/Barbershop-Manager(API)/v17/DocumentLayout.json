@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\theus\\OneDrive\\\u00C1rea de Trabalho\\Projetos C#\\Barbershop-Manager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0622924D-9B5F-4080-9E59-284D8D118E29}|src\\BarbershopManager.API\\BarbershopManager.API.csproj|c:\\users\\theus\\onedrive\\\u00E1rea de trabalho\\projetos c#\\barbershop-manager\\src\\barbershopmanager.api\\controllers\\users\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0622924D-9B5F-4080-9E59-284D8D118E29}|src\\BarbershopManager.API\\BarbershopManager.API.csproj|solutionrelative:src\\barbershopmanager.api\\controllers\\users\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA29DADB-1F92-49EF-A6DD-262438365811}|src\\BarbershopManager.Application\\BarbershopManager.Application.csproj|C:\\Users\\theus\\OneDrive\\\u00C1rea de Trabalho\\Projetos C#\\Barbershop-Manager\\src\\barbershopmanager.application\\usecases\\users\\getprofile\\getprofileuserusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA29DADB-1F92-49EF-A6DD-262438365811}|src\\BarbershopManager.Application\\BarbershopManager.Application.csproj|solutionrelative:src\\barbershopmanager.application\\usecases\\users\\getprofile\\getprofileuserusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA29DADB-1F92-49EF-A6DD-262438365811}|src\\BarbershopManager.Application\\BarbershopManager.Application.csproj|C:\\Users\\theus\\OneDrive\\\u00C1rea de Trabalho\\Projetos C#\\Barbershop-Manager\\src\\barbershopmanager.application\\usecases\\users\\login\\dologinusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA29DADB-1F92-49EF-A6DD-262438365811}|src\\BarbershopManager.Application\\BarbershopManager.Application.csproj|solutionrelative:src\\barbershopmanager.application\\usecases\\users\\login\\dologinusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0622924D-9B5F-4080-9E59-284D8D118E29}|src\\BarbershopManager.API\\BarbershopManager.API.csproj|C:\\Users\\theus\\OneDrive\\\u00C1rea de Trabalho\\Projetos C#\\Barbershop-Manager\\src\\barbershopmanager.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0622924D-9B5F-4080-9E59-284D8D118E29}|src\\BarbershopManager.API\\BarbershopManager.API.csproj|solutionrelative:src\\barbershopmanager.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6949A652-2A49-4112-859A-A8DAD82248D6}|src\\BarbershopManager.Infrastructure\\BarbershopManager.Infrastructure.csproj|C:\\Users\\theus\\OneDrive\\\u00C1rea de Trabalho\\Projetos C#\\Barbershop-Manager\\src\\barbershopmanager.infrastructure\\usersrepository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6949A652-2A49-4112-859A-A8DAD82248D6}|src\\BarbershopManager.Infrastructure\\BarbershopManager.Infrastructure.csproj|solutionrelative:src\\barbershopmanager.infrastructure\\usersrepository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2107F68D-C969-4F8E-A2C3-F4437DF781E1}|src\\BarbershopManager.Domain\\BarbershopManager.Domain.csproj|C:\\Users\\theus\\OneDrive\\\u00C1rea de Trabalho\\Projetos C#\\Barbershop-Manager\\src\\barbershopmanager.domain\\usersrepository\\ireadonlyuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2107F68D-C969-4F8E-A2C3-F4437DF781E1}|src\\BarbershopManager.Domain\\BarbershopManager.Domain.csproj|solutionrelative:src\\barbershopmanager.domain\\usersrepository\\ireadonlyuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 305,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\theus\\OneDrive\\\u00C1rea de Trabalho\\Projetos C#\\Barbershop-Manager\\src\\BarbershopManager.API\\Program.cs",
+              "RelativeDocumentMoniker": "src\\BarbershopManager.API\\Program.cs",
+              "ToolTip": "C:\\Users\\theus\\OneDrive\\\u00C1rea de Trabalho\\Projetos C#\\Barbershop-Manager\\src\\BarbershopManager.API\\Program.cs",
+              "RelativeToolTip": "src\\BarbershopManager.API\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAwwEYAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T02:25:49.153Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DoLoginUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\theus\\OneDrive\\\u00C1rea de Trabalho\\Projetos C#\\Barbershop-Manager\\src\\BarbershopManager.Application\\UseCases\\Users\\Login\\DoLoginUseCase.cs",
+              "RelativeDocumentMoniker": "src\\BarbershopManager.Application\\UseCases\\Users\\Login\\DoLoginUseCase.cs",
+              "ToolTip": "C:\\Users\\theus\\OneDrive\\\u00C1rea de Trabalho\\Projetos C#\\Barbershop-Manager\\src\\BarbershopManager.Application\\UseCases\\Users\\Login\\DoLoginUseCase.cs",
+              "RelativeToolTip": "src\\BarbershopManager.Application\\UseCases\\Users\\Login\\DoLoginUseCase.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAIAwwBUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T02:20:45.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GetProfileUserUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\theus\\OneDrive\\\u00C1rea de Trabalho\\Projetos C#\\Barbershop-Manager\\src\\BarbershopManager.Application\\UseCases\\Users\\GetProfile\\GetProfileUserUseCase.cs",
+              "RelativeDocumentMoniker": "src\\BarbershopManager.Application\\UseCases\\Users\\GetProfile\\GetProfileUserUseCase.cs",
+              "ToolTip": "C:\\Users\\theus\\OneDrive\\\u00C1rea de Trabalho\\Projetos C#\\Barbershop-Manager\\src\\BarbershopManager.Application\\UseCases\\Users\\GetProfile\\GetProfileUserUseCase.cs",
+              "RelativeToolTip": "src\\BarbershopManager.Application\\UseCases\\Users\\GetProfile\\GetProfileUserUseCase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T02:15:34.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\theus\\OneDrive\\\u00C1rea de Trabalho\\Projetos C#\\Barbershop-Manager\\src\\BarbershopManager.Infrastructure\\UsersRepository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "src\\BarbershopManager.Infrastructure\\UsersRepository\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\theus\\OneDrive\\\u00C1rea de Trabalho\\Projetos C#\\Barbershop-Manager\\src\\BarbershopManager.Infrastructure\\UsersRepository\\UserRepository.cs",
+              "RelativeToolTip": "src\\BarbershopManager.Infrastructure\\UsersRepository\\UserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T02:13:33.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IReadOnlyUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\theus\\OneDrive\\\u00C1rea de Trabalho\\Projetos C#\\Barbershop-Manager\\src\\BarbershopManager.Domain\\UsersRepository\\IReadOnlyUserRepository.cs",
+              "RelativeDocumentMoniker": "src\\BarbershopManager.Domain\\UsersRepository\\IReadOnlyUserRepository.cs",
+              "ToolTip": "C:\\Users\\theus\\OneDrive\\\u00C1rea de Trabalho\\Projetos C#\\Barbershop-Manager\\src\\BarbershopManager.Domain\\UsersRepository\\IReadOnlyUserRepository.cs",
+              "RelativeToolTip": "src\\BarbershopManager.Domain\\UsersRepository\\IReadOnlyUserRepository.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAUAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T02:12:11.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\theus\\OneDrive\\\u00C1rea de Trabalho\\Projetos C#\\Barbershop-Manager\\src\\BarbershopManager.API\\Controllers\\Users\\UserController.cs",
+              "RelativeDocumentMoniker": "src\\BarbershopManager.API\\Controllers\\Users\\UserController.cs",
+              "ToolTip": "C:\\Users\\theus\\OneDrive\\\u00C1rea de Trabalho\\Projetos C#\\Barbershop-Manager\\src\\BarbershopManager.API\\Controllers\\Users\\UserController.cs",
+              "RelativeToolTip": "src\\BarbershopManager.API\\Controllers\\Users\\UserController.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAIAwwBEAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T13:11:44.094Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
