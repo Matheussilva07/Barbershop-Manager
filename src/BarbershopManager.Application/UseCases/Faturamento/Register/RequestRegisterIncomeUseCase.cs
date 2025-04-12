@@ -4,6 +4,7 @@ using BarbershopManager.Communication.Responses;
 using BarbershopManager.Domain;
 using BarbershopManager.Domain.Entities;
 using BarbershopManager.Domain.IncomeRepository;
+using BarbershopManager.Domain.Services;
 using BarbershopManager.Exception.ExceptionBase;
 
 namespace BarbershopManager.Application.UseCases.Faturamento.Register;
@@ -12,18 +13,23 @@ public class RequestRegisterIncomeUseCase : IRequestRegisterIncomeUseCase
 	private readonly IMapper _mapper;
 	private readonly IUnitOfWork _unitOfWork;
 	private readonly IIncomesRepository _repository;
+	private readonly ILoggedUser _loggedUser;
 
-    public RequestRegisterIncomeUseCase(IMapper mapper, IUnitOfWork unitOfWork, IIncomesRepository repository)
-    {
-        this._mapper = mapper;
-		this._unitOfWork = unitOfWork;
-		this._repository = repository;
-    }
-    public async Task<ResponseRegisteredIncomeJson> Execute(RequestRegisterIncomeJson request)
+	public RequestRegisterIncomeUseCase(IMapper mapper, IUnitOfWork unitOfWork, IIncomesRepository repository, ILoggedUser loggedUser)
+	{
+		_mapper = mapper;
+		_unitOfWork = unitOfWork;
+		_repository = repository;
+		_loggedUser = loggedUser;
+	}
+	public async Task<ResponseRegisteredIncomeJson> Execute(RequestRegisterIncomeJson request)
 	{
 		Validator(request);
 
+		var loggedUser = await _loggedUser.GetUser();
+
 		var entity = _mapper.Map<Income>(request);
+		entity.UserId = loggedUser.Id;
 
 		await _repository.Add(entity);
 

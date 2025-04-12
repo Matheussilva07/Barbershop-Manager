@@ -9,49 +9,46 @@ internal class IncomesRepository : IIncomesRepository, IUpdateRepository
 	private readonly BarbershopDbContext _dbcontext;
 	public IncomesRepository(BarbershopDbContext dbContext)
     {
-        this._dbcontext = dbContext;
+        _dbcontext = dbContext;
     }
 
     public async Task Add(Income income)
 	{
 		await _dbcontext.Incomes.AddAsync(income);
 	}
-	public async Task<List<Income>> GetAll()
+	public async Task<List<Income>> GetAll(User user)
 	{
-		return await _dbcontext.Incomes.AsNoTracking().ToListAsync();
+		return await _dbcontext.Incomes.AsNoTracking().Where(income => income.UserId == user.Id).ToListAsync();
 	}
-    async Task<Income?> IIncomesRepository.GetById(int id)
+    async Task<Income?> IIncomesRepository.GetById(int id, User user)
 	{
-		return await _dbcontext.Incomes.AsNoTracking().FirstOrDefaultAsync(income => income.Id == id);
+		return await _dbcontext.Incomes.AsNoTracking().FirstOrDefaultAsync(income => income.Id == id && income.UserId == user.Id);
 	}
-	async Task<Income?> IUpdateRepository.GetById(int id)
+	async Task<Income?> IUpdateRepository.GetById(int id, User user)
 	{
-		return await _dbcontext.Incomes.FirstOrDefaultAsync(income => income.Id == id);
+		return await _dbcontext.Incomes.FirstOrDefaultAsync(income => income.Id == id && income.UserId == user.Id);
 	}
 	public void Update(Income income)
 	{
 		_dbcontext.Incomes.Update(income);
 	}
-	public async Task<bool> Delete(int id)
+	public async Task<bool> Delete(int id, User user)
 	{
-		var income =await _dbcontext.Incomes.FirstOrDefaultAsync(income => income.Id == id);
+		var income =await _dbcontext.Incomes.FirstOrDefaultAsync(income => income.Id == id && income.UserId == user.Id);
 
 		if (income is null)
 		{
 			return false;
 		}
-
 			_dbcontext.Incomes.Remove(income);
 
 			return true;
-		
-
 	}
-	public async Task<int> CountAll()
+	public async Task<int> CountAll(User user)
 	{
-		return await _dbcontext.Incomes.CountAsync();
+		return await _dbcontext.Incomes.Where(income => income.UserId == user.Id).CountAsync();
 	}
-	public async Task<int> CountAllInMonth(DateOnly date)
+	public async Task<int> CountAllInMonth(DateOnly date, User user)
 	{
 		var inicialDate = new DateTime(year: date.Year, month: date.Month, day: 1).Date;
 
@@ -61,7 +58,7 @@ internal class IncomesRepository : IIncomesRepository, IUpdateRepository
 
 		return await _dbcontext.Incomes
 			.AsNoTracking()
-			.Where(income => income.Data_Servico > inicialDate && income.Data_Servico < finalDate)
+			.Where(income => income.Data_Servico > inicialDate && income.Data_Servico < finalDate && income.UserId == user.Id)
 			.OrderBy(income => income.Data_Servico).CountAsync();
 	}
 }

@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using BarbershopManager.Communication.Responses;
 using BarbershopManager.Domain.IncomeRepository;
+using BarbershopManager.Domain.Services;
 using BarbershopManager.Exception.ExceptionBase;
 
 namespace BarbershopManager.Application.UseCases.Faturamento.GetById;
@@ -8,19 +9,18 @@ public class GetIncomeByIdUseCase : IGetIncomeByIdUseCase
 {
     private readonly IMapper _mapper;
     private readonly IIncomesRepository _repository;
-    public GetIncomeByIdUseCase(IMapper mapper, IIncomesRepository repository)
-    {
-        this._mapper = mapper;
-        this._repository = repository;
-    }
-    public async Task<ResponseIncomeJson> Execute(int id)
+    private readonly ILoggedUser _loggedUser;
+	public GetIncomeByIdUseCase(IMapper mapper, IIncomesRepository repository, ILoggedUser loggedUser)
 	{
-		var income = await _repository.GetById(id);
+		_mapper = mapper;
+		_repository = repository;
+		_loggedUser = loggedUser;
+	}
+	public async Task<ResponseIncomeJson> Execute(int id)
+	{
+		var loggedUser = await _loggedUser.GetUser();
 
-        if (income is null)
-        {
-            throw new NotFoundException(ResourceErrorMessages.NAO_ENCONTRADO);
-        }
+		var income = await _repository.GetById(id, loggedUser) ?? throw new NotFoundException(ResourceErrorMessages.NAO_ENCONTRADO);
 
         return _mapper.Map<ResponseIncomeJson>(income);
         	

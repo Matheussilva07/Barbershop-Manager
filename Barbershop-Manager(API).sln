@@ -7,19 +7,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9546FC96-4BF
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C41A54B9-63C8-4E3F-B0C3-5FAC12288137}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarbershopManager.API", "src\BarbershopManager.API\BarbershopManager.API.csproj", "{0622924D-9B5F-4080-9E59-284D8D118E29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BarbershopManager.API", "src\BarbershopManager.API\BarbershopManager.API.csproj", "{0622924D-9B5F-4080-9E59-284D8D118E29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarbershopManager.Communication", "src\BarbershopManager.Communication\BarbershopManager.Communication.csproj", "{57CD9998-D00A-4C3B-BE5D-148C3A64D189}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BarbershopManager.Communication", "src\BarbershopManager.Communication\BarbershopManager.Communication.csproj", "{57CD9998-D00A-4C3B-BE5D-148C3A64D189}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarbershopManager.Application", "src\BarbershopManager.Application\BarbershopManager.Application.csproj", "{CA29DADB-1F92-49EF-A6DD-262438365811}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BarbershopManager.Application", "src\BarbershopManager.Application\BarbershopManager.Application.csproj", "{CA29DADB-1F92-49EF-A6DD-262438365811}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarbershopManager.Domain", "src\BarbershopManager.Domain\BarbershopManager.Domain.csproj", "{2107F68D-C969-4F8E-A2C3-F4437DF781E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BarbershopManager.Domain", "src\BarbershopManager.Domain\BarbershopManager.Domain.csproj", "{2107F68D-C969-4F8E-A2C3-F4437DF781E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarbershopManager.Exception", "src\BarbershopManager.Exception\BarbershopManager.Exception.csproj", "{DF1E434C-1871-4142-B5A9-3E9A5100E2B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BarbershopManager.Exception", "src\BarbershopManager.Exception\BarbershopManager.Exception.csproj", "{DF1E434C-1871-4142-B5A9-3E9A5100E2B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarbershopManager.Infrastructure", "src\BarbershopManager.Infrastructure\BarbershopManager.Infrastructure.csproj", "{6949A652-2A49-4112-859A-A8DAD82248D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BarbershopManager.Infrastructure", "src\BarbershopManager.Infrastructure\BarbershopManager.Infrastructure.csproj", "{6949A652-2A49-4112-859A-A8DAD82248D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarbershopManager.Tests", "tests\BarbershopManager.Tests\BarbershopManager.Tests.csproj", "{59E6C024-61FB-437E-B566-016A384A8224}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidatorTests", "tests\BarbershopManager.Tests\ValidatorTests.csproj", "{59E6C024-61FB-437E-B566-016A384A8224}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommomUtilities", "CommomUtilities\CommomUtilities.csproj", "{D91DA3C8-58A1-4986-BE0F-B9EC0A6D079E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseCasesTests", "tests\UseCasesTests\UseCasesTests.csproj", "{CC2A289C-088B-49B0-9F86-1790C41BDE4C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +59,14 @@ Global
 		{59E6C024-61FB-437E-B566-016A384A8224}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59E6C024-61FB-437E-B566-016A384A8224}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59E6C024-61FB-437E-B566-016A384A8224}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D91DA3C8-58A1-4986-BE0F-B9EC0A6D079E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D91DA3C8-58A1-4986-BE0F-B9EC0A6D079E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D91DA3C8-58A1-4986-BE0F-B9EC0A6D079E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D91DA3C8-58A1-4986-BE0F-B9EC0A6D079E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC2A289C-088B-49B0-9F86-1790C41BDE4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC2A289C-088B-49B0-9F86-1790C41BDE4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC2A289C-088B-49B0-9F86-1790C41BDE4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC2A289C-088B-49B0-9F86-1790C41BDE4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +79,8 @@ Global
 		{DF1E434C-1871-4142-B5A9-3E9A5100E2B9} = {9546FC96-4BFE-45A1-8721-8C9AA86E7D6D}
 		{6949A652-2A49-4112-859A-A8DAD82248D6} = {9546FC96-4BFE-45A1-8721-8C9AA86E7D6D}
 		{59E6C024-61FB-437E-B566-016A384A8224} = {C41A54B9-63C8-4E3F-B0C3-5FAC12288137}
+		{D91DA3C8-58A1-4986-BE0F-B9EC0A6D079E} = {C41A54B9-63C8-4E3F-B0C3-5FAC12288137}
+		{CC2A289C-088B-49B0-9F86-1790C41BDE4C} = {C41A54B9-63C8-4E3F-B0C3-5FAC12288137}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A1CD58B3-67DE-417E-93F8-B144169243B4}

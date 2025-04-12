@@ -31,7 +31,7 @@
           }
         }
       },
-      "Bogus/35.6.1": {
+      "Bogus/35.6.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/Bogus.dll": {
@@ -40,6 +40,22 @@
         },
         "runtime": {
           "lib/net6.0/Bogus.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Castle.Core/5.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.EventLog": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Castle.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Castle.Core.dll": {
             "related": ".xml"
           }
         }
@@ -129,11 +145,8 @@
           }
         }
       },
-      "FluentAssertions/6.12.2": {
+      "FluentAssertions/8.1.1": {
         "type": "package",
-        "dependencies": {
-          "System.Configuration.ConfigurationManager": "4.4.0"
-        },
         "compile": {
           "lib/net6.0/FluentAssertions.dll": {
             "related": ".pdb;.xml"
@@ -824,6 +837,18 @@
           "build/netcoreapp3.1/Microsoft.TestPlatform.TestHost.props": {}
         }
       },
+      "Moq/4.20.72": {
+        "type": "package",
+        "dependencies": {
+          "Castle.Core": "5.1.1"
+        },
+        "compile": {
+          "lib/net6.0/Moq.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Moq.dll": {}
+        }
+      },
       "MySqlConnector/2.3.5": {
         "type": "package",
         "dependencies": {
@@ -896,18 +921,30 @@
           }
         }
       },
-      "System.Configuration.ConfigurationManager/4.4.0": {
+      "System.Diagnostics.EventLog/6.0.0": {
         "type": "package",
-        "dependencies": {
-          "System.Security.Cryptography.ProtectedData": "4.4.0"
-        },
         "compile": {
-          "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll": {
+          "lib/net6.0/System.Diagnostics.EventLog.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
+          "lib/net6.0/System.Diagnostics.EventLog.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.Messages.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          },
+          "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
         }
       },
       "System.IdentityModel.Tokens.Jwt/8.2.0": {
@@ -953,23 +990,6 @@
         "runtime": {
           "lib/netstandard2.0/System.Reflection.Metadata.dll": {
             "related": ".xml"
-          }
-        }
-      },
-      "System.Security.Cryptography.ProtectedData/4.4.0": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard2.0/_._": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
-            "assetType": "runtime",
-            "rid": "win"
           }
         }
       },
@@ -1136,6 +1156,23 @@
         "runtime": {
           "bin/placeholder/BarbershopManager.Infrastructure.dll": {}
         }
+      },
+      "CommomUtilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "BarbershopManager.Application": "1.0.0",
+          "BarbershopManager.Communication": "1.0.0",
+          "BarbershopManager.Domain": "1.0.0",
+          "Bogus": "35.6.2",
+          "Moq": "4.20.72"
+        },
+        "compile": {
+          "bin/placeholder/CommomUtilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommomUtilities.dll": {}
+        }
       }
     }
   },
@@ -1186,14 +1223,16 @@
         "readme.md"
       ]
     },
-    "Bogus/35.6.1": {
-      "sha512": "QPJ8zLL0ScEunEoUNhMDigD4ykA/n7vXCZUQdGCFGHBfP2mNYjiCzR9Cj12eaFaDlwkhIC1HKQZihWl8OgbLsw==",
+    "Bogus/35.6.2": {
+      "sha512": "u3XtrfDqwNDqmJiUA6AnUBGU2169av3BtBOrcgp1JZb2RVCg6P6JOTcJvXCLDd6YiRZFKxuoujiWM951Ze8D5w==",
       "type": "package",
-      "path": "bogus/35.6.1",
+      "path": "bogus/35.6.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "bogus.35.6.1.nupkg.sha512",
+        "LICENSE",
+        "bogus.128.png",
+        "bogus.35.6.2.nupkg.sha512",
         "bogus.nuspec",
         "lib/net40/Bogus.dll",
         "lib/net40/Bogus.xml",
@@ -1203,6 +1242,30 @@
         "lib/netstandard1.3/Bogus.xml",
         "lib/netstandard2.0/Bogus.dll",
         "lib/netstandard2.0/Bogus.xml"
+      ]
+    },
+    "Castle.Core/5.1.1": {
+      "sha512": "rpYtIczkzGpf+EkZgDr9CClTdemhsrwA/W5hMoPjLkRFnXzH44zDLoovXeKtmxb1ykXK9aJVODSpiJml8CTw2g==",
+      "type": "package",
+      "path": "castle.core/5.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ASL - Apache Software Foundation License.txt",
+        "CHANGELOG.md",
+        "LICENSE",
+        "castle-logo.png",
+        "castle.core.5.1.1.nupkg.sha512",
+        "castle.core.nuspec",
+        "lib/net462/Castle.Core.dll",
+        "lib/net462/Castle.Core.xml",
+        "lib/net6.0/Castle.Core.dll",
+        "lib/net6.0/Castle.Core.xml",
+        "lib/netstandard2.0/Castle.Core.dll",
+        "lib/netstandard2.0/Castle.Core.xml",
+        "lib/netstandard2.1/Castle.Core.dll",
+        "lib/netstandard2.1/Castle.Core.xml",
+        "readme.txt"
       ]
     },
     "ClosedXML/0.104.1": {
@@ -1373,15 +1436,16 @@
         "lib/netstandard2.0/ExcelNumberFormat.xml"
       ]
     },
-    "FluentAssertions/6.12.2": {
-      "sha512": "8YE+xJmT8wgzEpFuzJ4S62oFhEL/AKouMz1RWPEMEUhy9H11aRQlGIWcHurH5BEy7tbF6gb0CJrs0wOw/AtDcQ==",
+    "FluentAssertions/8.1.1": {
+      "sha512": "tzrZ95x7TWY4panvAhVoHg5zIhg4768Cx+8ZPoKR2sDPu2oCvVeg3ts0TTL0aJlIfZ1NGxCtBP5s555AgXJozg==",
       "type": "package",
-      "path": "fluentassertions/6.12.2",
+      "path": "fluentassertions/8.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "FluentAssertions.png",
-        "fluentassertions.6.12.2.nupkg.sha512",
+        "LICENSE",
+        "fluentassertions.8.1.1.nupkg.sha512",
         "fluentassertions.nuspec",
         "lib/net47/FluentAssertions.dll",
         "lib/net47/FluentAssertions.pdb",
@@ -1389,12 +1453,6 @@
         "lib/net6.0/FluentAssertions.dll",
         "lib/net6.0/FluentAssertions.pdb",
         "lib/net6.0/FluentAssertions.xml",
-        "lib/netcoreapp2.1/FluentAssertions.dll",
-        "lib/netcoreapp2.1/FluentAssertions.pdb",
-        "lib/netcoreapp2.1/FluentAssertions.xml",
-        "lib/netcoreapp3.0/FluentAssertions.dll",
-        "lib/netcoreapp3.0/FluentAssertions.pdb",
-        "lib/netcoreapp3.0/FluentAssertions.xml",
         "lib/netstandard2.0/FluentAssertions.dll",
         "lib/netstandard2.0/FluentAssertions.pdb",
         "lib/netstandard2.0/FluentAssertions.xml",
@@ -2304,6 +2362,23 @@
         "microsoft.testplatform.testhost.nuspec"
       ]
     },
+    "Moq/4.20.72": {
+      "sha512": "EA55cjyNn8eTNWrgrdZJH5QLFp2L43oxl1tlkoYUKIE9pRwL784OWiTXeCV5ApS+AMYEAlt7Fo03A2XfouvHmQ==",
+      "type": "package",
+      "path": "moq/4.20.72",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net462/Moq.dll",
+        "lib/net6.0/Moq.dll",
+        "lib/netstandard2.0/Moq.dll",
+        "lib/netstandard2.1/Moq.dll",
+        "moq.4.20.72.nupkg.sha512",
+        "moq.nuspec",
+        "readme.md"
+      ]
+    },
     "MySqlConnector/2.3.5": {
       "sha512": "AmEfUPkFl+Ev6jJ8Dhns3CYHBfD12RHzGYWuLt6DfG6/af6YvOMyPz74ZPPjBYQGRJkumD2Z48Kqm8s5DJuhLA==",
       "type": "package",
@@ -2411,25 +2486,35 @@
         "sixlabors.fonts.nuspec"
       ]
     },
-    "System.Configuration.ConfigurationManager/4.4.0": {
-      "sha512": "gWwQv/Ug1qWJmHCmN17nAbxJYmQBM/E94QxKLksvUiiKB1Ld3Sc/eK1lgmbSjDFxkQhVuayI/cGFZhpBSodLrg==",
+    "System.Diagnostics.EventLog/6.0.0": {
+      "sha512": "lcyUiXTsETK2ALsZrX+nWuHSIQeazhqPphLfaRxzdGaG93+0kELqpgEHtwWOlQe7+jSFnKwaCAgL4kjeZCQJnw==",
       "type": "package",
-      "path": "system.configuration.configurationmanager/4.4.0",
+      "path": "system.diagnostics.eventlog/6.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/System.Configuration.ConfigurationManager.dll",
-        "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll",
-        "ref/net461/System.Configuration.ConfigurationManager.dll",
-        "ref/net461/System.Configuration.ConfigurationManager.xml",
-        "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll",
-        "ref/netstandard2.0/System.Configuration.ConfigurationManager.xml",
-        "system.configuration.configurationmanager.4.4.0.nupkg.sha512",
-        "system.configuration.configurationmanager.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "buildTransitive/netcoreapp2.0/System.Diagnostics.EventLog.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Diagnostics.EventLog.dll",
+        "lib/net461/System.Diagnostics.EventLog.xml",
+        "lib/net6.0/System.Diagnostics.EventLog.dll",
+        "lib/net6.0/System.Diagnostics.EventLog.xml",
+        "lib/netcoreapp3.1/System.Diagnostics.EventLog.dll",
+        "lib/netcoreapp3.1/System.Diagnostics.EventLog.xml",
+        "lib/netstandard2.0/System.Diagnostics.EventLog.dll",
+        "lib/netstandard2.0/System.Diagnostics.EventLog.xml",
+        "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.Messages.dll",
+        "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.dll",
+        "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.xml",
+        "runtimes/win/lib/netcoreapp3.1/System.Diagnostics.EventLog.Messages.dll",
+        "runtimes/win/lib/netcoreapp3.1/System.Diagnostics.EventLog.dll",
+        "runtimes/win/lib/netcoreapp3.1/System.Diagnostics.EventLog.xml",
+        "system.diagnostics.eventlog.6.0.0.nupkg.sha512",
+        "system.diagnostics.eventlog.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.IdentityModel.Tokens.Jwt/8.2.0": {
@@ -2502,47 +2587,6 @@
         "lib/portable-net45+win8/System.Reflection.Metadata.xml",
         "system.reflection.metadata.1.6.0.nupkg.sha512",
         "system.reflection.metadata.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "System.Security.Cryptography.ProtectedData/4.4.0": {
-      "sha512": "cJV7ScGW7EhatRsjehfvvYVBvtiSMKgN8bOVI0bQhnF5bU7vnHVIsH49Kva7i7GWaWYvmEzkYVk1TC+gZYBEog==",
-      "type": "package",
-      "path": "system.security.cryptography.protecteddata/4.4.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.Security.Cryptography.ProtectedData.dll",
-        "lib/net461/System.Security.Cryptography.ProtectedData.dll",
-        "lib/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
-        "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net46/System.Security.Cryptography.ProtectedData.dll",
-        "ref/net461/System.Security.Cryptography.ProtectedData.dll",
-        "ref/net461/System.Security.Cryptography.ProtectedData.xml",
-        "ref/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
-        "ref/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
-        "ref/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/win/lib/net46/System.Security.Cryptography.ProtectedData.dll",
-        "runtimes/win/lib/net461/System.Security.Cryptography.ProtectedData.dll",
-        "runtimes/win/lib/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
-        "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
-        "system.security.cryptography.protecteddata.4.4.0.nupkg.sha512",
-        "system.security.cryptography.protecteddata.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -2715,14 +2759,20 @@
       "type": "project",
       "path": "../../src/BarbershopManager.Infrastructure/BarbershopManager.Infrastructure.csproj",
       "msbuildProject": "../../src/BarbershopManager.Infrastructure/BarbershopManager.Infrastructure.csproj"
+    },
+    "CommomUtilities/1.0.0": {
+      "type": "project",
+      "path": "../../CommomUtilities/CommomUtilities.csproj",
+      "msbuildProject": "../../CommomUtilities/CommomUtilities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "BarbershopManager.Application >= 1.0.0",
       "BarbershopManager.Communication >= 1.0.0",
-      "Bogus >= 35.6.1",
-      "FluentAssertions >= 6.12.2",
+      "Bogus >= 35.6.2",
+      "CommomUtilities >= 1.0.0",
+      "FluentAssertions >= 8.1.1",
       "Microsoft.NET.Test.Sdk >= 17.11.1",
       "coverlet.collector >= 6.0.2",
       "xunit >= 2.9.2",
@@ -2736,9 +2786,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\theus\\OneDrive\\Área de Trabalho\\Projetos C#\\Barbershop-Manager\\tests\\BarbershopManager.Tests\\BarbershopManager.Tests.csproj",
-      "projectName": "BarbershopManager.Tests",
-      "projectPath": "C:\\Users\\theus\\OneDrive\\Área de Trabalho\\Projetos C#\\Barbershop-Manager\\tests\\BarbershopManager.Tests\\BarbershopManager.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\theus\\OneDrive\\Área de Trabalho\\Projetos C#\\Barbershop-Manager\\tests\\BarbershopManager.Tests\\ValidatorTests.csproj",
+      "projectName": "ValidatorTests",
+      "projectPath": "C:\\Users\\theus\\OneDrive\\Área de Trabalho\\Projetos C#\\Barbershop-Manager\\tests\\BarbershopManager.Tests\\ValidatorTests.csproj",
       "packagesPath": "C:\\Users\\theus\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\theus\\OneDrive\\Área de Trabalho\\Projetos C#\\Barbershop-Manager\\tests\\BarbershopManager.Tests\\obj\\",
       "projectStyle": "PackageReference",
@@ -2761,6 +2811,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "C:\\Users\\theus\\OneDrive\\Área de Trabalho\\Projetos C#\\Barbershop-Manager\\CommomUtilities\\CommomUtilities.csproj": {
+              "projectPath": "C:\\Users\\theus\\OneDrive\\Área de Trabalho\\Projetos C#\\Barbershop-Manager\\CommomUtilities\\CommomUtilities.csproj"
+            },
             "C:\\Users\\theus\\OneDrive\\Área de Trabalho\\Projetos C#\\Barbershop-Manager\\src\\BarbershopManager.Application\\BarbershopManager.Application.csproj": {
               "projectPath": "C:\\Users\\theus\\OneDrive\\Área de Trabalho\\Projetos C#\\Barbershop-Manager\\src\\BarbershopManager.Application\\BarbershopManager.Application.csproj"
             },
@@ -2787,11 +2840,11 @@
         "dependencies": {
           "Bogus": {
             "target": "Package",
-            "version": "[35.6.1, )"
+            "version": "[35.6.2, )"
           },
           "FluentAssertions": {
             "target": "Package",
-            "version": "[6.12.2, )"
+            "version": "[8.1.1, )"
           },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
