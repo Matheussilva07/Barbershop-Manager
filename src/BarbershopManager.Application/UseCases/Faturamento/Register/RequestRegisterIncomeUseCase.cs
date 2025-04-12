@@ -39,7 +39,7 @@ public class RequestRegisterIncomeUseCase : IRequestRegisterIncomeUseCase
 
 	}
 
-	private void Validator(RequestRegisterIncomeJson request)
+	private static void Validator(RequestRegisterIncomeJson request)
 	{
 		var validator = new RequestRegisterIncomeValidator();
 

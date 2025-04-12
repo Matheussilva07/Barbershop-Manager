@@ -2,6 +2,7 @@
 using BarbershopManager.Exception.ExceptionBase;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
+using System.Linq;
 
 namespace BarbershopManager.API.Filter;
 

@@ -68,7 +68,7 @@ builder.Services.AddCors(options =>
 
 });
 
-//builder.Services.AddMvc(option => option.Filters.Add(typeof(ExceptionFilter))); // <- Define o filtro de exceção:
+builder.Services.AddMvc(config => config.Filters.Add(typeof(ExceptionFilter))); // <- Define o filtro de exceção:
 
 builder.Services.AddUseCasesDependencyInjection();
 builder.Services.AddInfrastructureDependencyInjection(builder.Configuration);
