@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CWMWI2qxv8ycpRQfQtSMsSX+xDXaxvQSpJTVYsOlxxTqosfw19iCmtf/4kuxMFRbMmz8dh9STSgu0Os9crTdgQ==",
+  "dgSpecHash": "E4qqM/g2DkXPx+r9i/EaAYIBBAeTtnzGSHrUKD3qJmAhe30gakwNCQEqBkYpZmcEg5eOYeK6rTZXKokMXP806Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\theus\\OneDrive\\Área de Trabalho\\Projetos C#\\Barbershop-Manager\\src\\BarbershopManager.Domain\\BarbershopManager.Domain.csproj",
+  "projectFilePath": "C:\\Users\\theus\\OneDrive\\Área de Trabalho\\Projetos C#\\Barbershop-Manager\\Barbershop-Manager\\src\\BarbershopManager.Domain\\BarbershopManager.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

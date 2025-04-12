@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0kkHWckxxIKYBu0PAk5qEISMuEpoMOXf7OXGWIrpYhejjxW3RaBk7Pz8sIHNZNzafpw4LX7KSGOQ1ZtenR60iQ==",
+  "dgSpecHash": "3Z/X6Dk1uzapoW9sdwX+8uWCl6TWPqcGj671DKfyXAc89I8VxDSpcHpK4Cdv5110k3rvU4Ss+bdlg7Gr2xRUwg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\theus\\OneDrive\\Área de Trabalho\\Projetos C#\\Barbershop-Manager\\tests\\BarbershopManager.Tests\\ValidatorTests.csproj",
+  "projectFilePath": "C:\\Users\\theus\\OneDrive\\Área de Trabalho\\Projetos C#\\Barbershop-Manager\\Barbershop-Manager\\tests\\BarbershopManager.Tests\\ValidatorTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\theus\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\theus\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",

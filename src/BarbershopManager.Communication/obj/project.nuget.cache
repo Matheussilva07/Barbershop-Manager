@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pI3rdSeSUG1OMd3ELsaAh3jkU7kmjz25LwQyuvorWZgImfVCoPCV29MhGpjtUrlGZYuy3wQTZhwhu+GeMKOHiw==",
+  "dgSpecHash": "H9pAgf8alwaF/A0ZobczHd4TAG+zV/zrdskesME63cT/mQbU0OVHoYBjmieh2oTnirxofjUsCdmcTHnFsC2nrg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\theus\\OneDrive\\Área de Trabalho\\Projetos C#\\Barbershop-Manager\\src\\BarbershopManager.Communication\\BarbershopManager.Communication.csproj",
+  "projectFilePath": "C:\\Users\\theus\\OneDrive\\Área de Trabalho\\Projetos C#\\Barbershop-Manager\\Barbershop-Manager\\src\\BarbershopManager.Communication\\BarbershopManager.Communication.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

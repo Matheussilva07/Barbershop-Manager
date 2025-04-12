@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\theus\\OneDrive\\Área de Trabalho\\Projetos C#\\Barbershop-Manager\\src\\BarbershopManager.Exception\\BarbershopManager.Exception.csproj": {}
+    "C:\\Users\\theus\\OneDrive\\Área de Trabalho\\Projetos C#\\Barbershop-Manager\\Barbershop-Manager\\src\\BarbershopManager.Exception\\BarbershopManager.Exception.csproj": {}
   },
   "projects": {
-    "C:\\Users\\theus\\OneDrive\\Área de Trabalho\\Projetos C#\\Barbershop-Manager\\src\\BarbershopManager.Exception\\BarbershopManager.Exception.csproj": {
+    "C:\\Users\\theus\\OneDrive\\Área de Trabalho\\Projetos C#\\Barbershop-Manager\\Barbershop-Manager\\src\\BarbershopManager.Exception\\BarbershopManager.Exception.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\theus\\OneDrive\\Área de Trabalho\\Projetos C#\\Barbershop-Manager\\src\\BarbershopManager.Exception\\BarbershopManager.Exception.csproj",
+        "projectUniqueName": "C:\\Users\\theus\\OneDrive\\Área de Trabalho\\Projetos C#\\Barbershop-Manager\\Barbershop-Manager\\src\\BarbershopManager.Exception\\BarbershopManager.Exception.csproj",
         "projectName": "BarbershopManager.Exception",
-        "projectPath": "C:\\Users\\theus\\OneDrive\\Área de Trabalho\\Projetos C#\\Barbershop-Manager\\src\\BarbershopManager.Exception\\BarbershopManager.Exception.csproj",
+        "projectPath": "C:\\Users\\theus\\OneDrive\\Área de Trabalho\\Projetos C#\\Barbershop-Manager\\Barbershop-Manager\\src\\BarbershopManager.Exception\\BarbershopManager.Exception.csproj",
         "packagesPath": "C:\\Users\\theus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\theus\\OneDrive\\Área de Trabalho\\Projetos C#\\Barbershop-Manager\\src\\BarbershopManager.Exception\\obj\\",
+        "outputPath": "C:\\Users\\theus\\OneDrive\\Área de Trabalho\\Projetos C#\\Barbershop-Manager\\Barbershop-Manager\\src\\BarbershopManager.Exception\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

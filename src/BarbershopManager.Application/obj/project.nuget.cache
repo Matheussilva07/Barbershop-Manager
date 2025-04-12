@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j+HTFaeqe5mtdFOKIfK5d5xO7Rw5JZ1QNyMHPLqkZUV8W0YE+ugX6385cwaAaAX2EDMIjG6+PajsLSgQ14uuWg==",
+  "dgSpecHash": "1xRqpq1rN7EMYktsJCIK6d3b5EhTvcXH3GK3mdU4p/uQ1C5vh96PeaWDu3bRCcKh4ktZY1va3tPi3T6pHOYKcA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\theus\\OneDrive\\Área de Trabalho\\Projetos C#\\Barbershop-Manager\\src\\BarbershopManager.Application\\BarbershopManager.Application.csproj",
+  "projectFilePath": "C:\\Users\\theus\\OneDrive\\Área de Trabalho\\Projetos C#\\Barbershop-Manager\\Barbershop-Manager\\src\\BarbershopManager.Application\\BarbershopManager.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\theus\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\theus\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",

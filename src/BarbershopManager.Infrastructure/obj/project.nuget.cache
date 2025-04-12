@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "91NZg8ymXCwP5xKCJOluxWer5ZcgzyTXkpYxQXy/kgdv5T/aPf6GwL8wvEyLdGbjqzYRB4E4okQkcK0SOY2/mQ==",
+  "dgSpecHash": "SVY03/k8ZjUgzal1RboMEvTEZ6Xj63KpcdNmjQ8pgYvY9cixYB+1V41EOOKv+aZ8qskSgkPOTTwSoaehIJKJvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\theus\\OneDrive\\Área de Trabalho\\Projetos C#\\Barbershop-Manager\\src\\BarbershopManager.Infrastructure\\BarbershopManager.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\theus\\OneDrive\\Área de Trabalho\\Projetos C#\\Barbershop-Manager\\Barbershop-Manager\\src\\BarbershopManager.Infrastructure\\BarbershopManager.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\theus\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\theus\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
